@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>marque</title>
+    <style>
+        marquee{
+            width: 200px;
+            height: 200px;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+<!--不是w3c推荐标签但是浏览器适应那个不错
+作用：跑马灯效果。横屏滚动
+<marquee>内容</marquee>
+direction  滚动方向
+scrollamount    滚动速度
+loop    滚动次数
+behavior  设置滚动那个类型   slide（滚到边界不动） alternate（滚到边界反方向滚）
+-->
+<marquee direction="left">小说的巅峰</marquee>
+<marquee direction="up">小说的巅峰</marquee>
+<marquee direction="down">小说的巅峰</marquee>
+<marquee direction="right">小说的巅峰</marquee>
+<Hr>
+<marquee scrollamount="1">小说的巅峰</marquee>
+<marquee loop="1">小说的巅峰</marquee>
+<hr>
+<marquee behavior="slide">小说的巅峰</marquee>
+<marquee behavior="alternate">小说的巅峰</marquee>
+<hr>
+<marquee behavior="alternate"><img src="meimei.jpg" width="64"></marquee>
+</body>
+</html>

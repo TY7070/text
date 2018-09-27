@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-无序列表</title>
+</head>
+<body>
+<!--
+列表标签：
+  1、作用：给数据添加语义告诉浏览器这堆数据是一个整体
+  2、分类：无序列表(unordered list)、定义列表(definition list)（图文混排）只放dd、dt。有序列表(ordered list)
+无序列表：
+  1、作用：给数据添加语义，且数据没有先后顺序。无序标签只是不显示1234但是有顺序
+  2、格式：<ul>
+                <li>需要显示的条目<li>
+           <ul>
+           li--list item缩写
+           list--列表、item--条目
+  3、注意：会显示圆点但不是添加
+         ul、li一般不会单独使用
+         ul标签中不推荐使用别的标签,li标签中添加别的标签
+  4、应用常见：新闻列表、商品列表、导航条
+
+-->
+<h2>城市</h2>
+<li>青岛</li>单独的li
+<ul>
+    <li>北京</li>
+    <li>上海</li>
+    <li><img src="meimei.jpg" width="200"></li>
+    <li><a href="https://baike.bai.com/item/%E6%9D%8E%E5%85%B0%E8%BF%AA/155498?fr=aladdin"target="_blank">李兰迪</a></li>
+</ul>
+<ol>
+    <li>第一</li>
+    <li>第一</li>
+    <li>第一</li>
+    <li>第一</li>
+    <li>第一</li>
+</ol>
+<dl>
+    <dt>定义列表中的标题</dt>
+    <dd><li>对标题进行描述1</li>
+         <li>对标题进行描述2</li>
+    </dd>
+    <dt>生活</dt>
+    <dd>日出东海落西山，愁也一天喜，也一天</dd>
+</dl>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>表格标签</p>
+<table border="5"width="1000"height="100">
+    <tr>
+        <td>姓  名</td>
+        <td>学  号</td>
+        <td>性  别</td>
+    </tr>
+        <td>林洪浩</td>
+        <td>213456</td>
+        <td>男</td>
+    </tr>
+</table>
+<!--table：整个表格      数据量大用表格展示的清晰
+tr:表格中的一行
+td：一个单元格
+border属性     默认border="0"-->
+    <!--
+1、宽度和高度属性
+  可以给table标签和td标签使用
+  默认内容尺寸
+  在td下修改宽度和高度不会影响整个表格
+  width="50px"
+2、水平对齐和垂直对齐属性
+   水平对齐只能给table、tr和td标签使用
+   垂直对齐还能给tr、td标签使用
+   aling=""
+3、外边距和内边距属性
+    只能给table标签使用
+    -->
+</body>
+</html>

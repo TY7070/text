@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<!--手机用户信息
+表单元素
+  有特殊外观和默认功能的标签-->
+<!--常见表单元素
+input标签
+   type属性
+     值：text   明文输入框
+         password  暗纹输入框
+         value="123"  设置默认值为123
+         radio    单选框-->
+<!--action跳转默认method=“get”（明文跳转）method=“past（暗纹跳转）”只能提交name属性，单选框和复选框必须设置相同name值-->
+<!--value表示给服务器的内容-->
+<form action="李兰迪.html">
+    账号<input type="text"name="usename"/><br>
+    密码<input type="password"name="password"/><br>
+    <input type="radio"name="xb">男
+    <input type="radio"name="xb">女<br>
+    兴趣
+    <input type="checkbox">篮球
+    <input type="checkbox">足球
+    <input type="checkbox">棒球
+    <input type="checkbox">羽毛球
+   <p> <input type="submit"value="登录">
+    <input type="reset"value="重置"></p>
+    <p><input type="image"src="meimei.jpg"width="50"></p>
+    <!--label标签    使用for和id=“”    或者使用label标签直接包裹-->
+        <label for="account">账号</label><input type="text"name="usename"id="account"/><br>
+        <label for="accoun">密码</label><input type="password"name="password"id="accoun"/>
+<label>        账号<input type="text"name="usename"/><br>
+</label>
+    <br>
+    <p>非input标签</p>
+    <!--datalist
+    给输入框输入待选项-->
+    输入车型：<input type="text" list="car">
+    <datalist id="car">
+        <option >奔驰</option>
+        <option >宝马</option>
+        <option value="">宾利</option>
+        <option value="">卡宴</option>
+        <option value="">路虎</option>
+        <option value="">猛禽</option>
+        <option value="">林肯</option>
+    </datalist>
+
+    <!--select  定义下拉列表
+    下拉不能输入内容//-->
+    <p>选择数字<select name="" id="">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option selected="selected">6</option><!--设置为默认值-->
+    </select></p>
+    <p>提示选择（仅提高阅读性）</p>
+    <select >
+        <optgroup label="一">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option selected="selected">6</option>
+            <optgroup label="二">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option selected="selected">6</option>
+    <select>
+    <hr>
+    <textarea name="个人简介" id="" cols="30" rows="10">
+可以使文字换行。cols决定宽度，即一行几个文字/row决定可以有几行文字但是仍然可以无限输
+    </textarea>
+</form>
+</body>
+</html>

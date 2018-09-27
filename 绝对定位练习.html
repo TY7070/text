@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位练习</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        border:2px solid#242424;
+        margin:0 auto;
+        position: relative;
+    }
+    div .hot{
+        width: 45px;
+        height: 44px;
+        background: url("images/tuangou.png") no-repeat 0px -280px;
+        /*background: url("images/tuangou.png") no-repeat 0px -280px;*/
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    div .price{
+        width: 134px;
+        height: 42px;
+        background: url("images/tuangou.png") no-repeat 0px -362px;
+        position: absolute;
+        left: -7px;
+        top: 163px
+    }
+</style>
+<body>
+<div>
+    <img src="images/meat.jpg" width="300px" height=200px">
+    <span class="hot"></span>
+    <span class="price"></span>
+    <p>就非得随便打点字</p>
+</div>
+</body>
+</html>
